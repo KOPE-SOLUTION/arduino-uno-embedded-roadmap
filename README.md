@@ -1,5 +1,7 @@
 # Arduino Uno Embedded Roadmap
 
+![Thumbnail YouTube](images/Thumbnail.png)
+
 Learn Arduino Uno from beginner to embedded systems engineering.
 
 This repository is designed for:
@@ -38,11 +40,10 @@ Using:
 
 | EP  | Topic     |
 | --- | --------- |
-| EP1 | GPIO      |
+| EP1 | [GPIO](EP01_GPIO/README.md)      |
 | EP2 | UART      |
 | EP3 | Timer     |
 | EP4 | Interrupt |
-
 
 ### Control Layer
 

@@ -28,7 +28,7 @@ Learn the fundamentals of digital input and output using Arduino Uno.
 
 ## Wiring
 
-Comming soon...
+![Schemetic](Images/Schemetic.png)
 
 ---
 
@@ -44,12 +44,9 @@ void setup(){
 }
 
 void loop(){
-    if (digitalRead(buttonPin) == LOW)
-    {
+    if (digitalRead(buttonPin) == LOW){
         digitalWrite(ledPin, HIGH);
-    }
-    else
-    {
+    }else{
         digitalWrite(ledPin, LOW);
     }
 }
