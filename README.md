@@ -40,8 +40,8 @@ Using:
 
 | EP  | Topic     |
 | --- | --------- |
-| EP1 | [GPIO](EP01_GPIO/README.md)      |
-| EP2 | UART      |
+| EP1 | [GPIO Input and Output](EP01_GPIO/README.md)      |
+| EP2 | [UART Serial Communication](EP02_UART/README.md)      |
 | EP3 | Timer     |
 | EP4 | Interrupt |
 
