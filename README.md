@@ -42,7 +42,7 @@ Using:
 | --- | --------- |
 | EP1 | [GPIO Input and Output](EP01_GPIO/README.md)      |
 | EP2 | [UART Serial Communication](EP02_UART/README.md)      |
-| EP3 | Timer     |
+| EP3 | [Timer Basic](EP03_TIMER/README.md)     |
 | EP4 | Interrupt |
 
 ### Control Layer
