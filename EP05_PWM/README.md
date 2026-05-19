@@ -101,9 +101,7 @@ analogWrite(pin, value);
 
 # Duty Cycle คืออะไร?
 
-Duty Cycle คือ:
-
-เปอร์เซ็นต์เวลาที่สัญญาณเป็น HIGH
+Duty Cycle คือ: เปอร์เซ็นต์เวลาที่สัญญาณเป็น HIGH
 
 ตัวอย่าง:
 - 50% = HIGH ครึ่งหนึ่ง
