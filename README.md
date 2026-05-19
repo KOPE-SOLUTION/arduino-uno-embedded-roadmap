@@ -43,13 +43,13 @@ Using:
 | EP1 | [GPIO Input and Output](EP01_GPIO/README.md)      |
 | EP2 | [UART Serial Communication](EP02_UART/README.md)      |
 | EP3 | [Timer Basic](EP03_TIMER/README.md)     |
-| EP4 | [Interrupt](EP04_INTERRUPT/README.md) |
+| EP4 | [Interrupt Basic](EP04_INTERRUPT/README.md) |
 
 ### Control Layer
 
 | EP  | Topic |
 | --- | ----- |
-| EP5 | PWM   |
+| EP5 | [PWM Basic](EP05_PWM/README.md)   |
 | EP6 | ADC   |
 
 ### Communication Layer

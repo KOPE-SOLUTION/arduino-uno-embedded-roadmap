@@ -24,10 +24,7 @@ Interrupt คือกลไกที่ทำให้ MCU หยุดงา�
 
 # ทำไม Interrupt ถึงสำคัญ?
 
-ถ้าไม่มี Interrupt:
-- MCU ต้องคอยตรวจสอบทุกอย่างตลอดเวลา
-
-เรียกว่า: Polling
+ถ้าไม่มี Interrupt: MCU ต้องคอยตรวจสอบทุกอย่างตลอดเวลา เรียกว่า: Polling
 
 ซึ่ง:
 - เปลือง CPU
@@ -77,22 +74,16 @@ const int ledPin = 13;
 const int buttonPin = 2;
 
 void setup(){
-
-    pinMode(ledPin, OUTPUT);
-
-    pinMode(buttonPin, INPUT_PULLUP);
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
 }
 
 void loop(){
-
-    if (digitalRead(buttonPin) == LOW){
-
-        digitalWrite(ledPin, HIGH);
-
-    }else{
-
-        digitalWrite(ledPin, LOW);
-    }
+  if (digitalRead(buttonPin) == LOW){
+    digitalWrite(ledPin, HIGH);
+  }else{
+    digitalWrite(ledPin, LOW);
+  }
 }
 ```
 
@@ -119,24 +110,22 @@ const int buttonPin = 2;
 volatile bool ledState = false;
 
 void setup(){
+  pinMode(ledPin, OUTPUT);
+  pinMode(buttonPin, INPUT_PULLUP);
 
-    pinMode(ledPin, OUTPUT);
-
-    pinMode(buttonPin, INPUT_PULLUP);
-
-    attachInterrupt(
-        digitalPinToInterrupt(buttonPin),
-        buttonISR,
-        FALLING
-    );
+  attachInterrupt(
+    digitalPinToInterrupt(buttonPin),
+    buttonISR,
+    FALLING
+  );
 }
 
 void loop(){
-    digitalWrite(ledPin, ledState);
+  digitalWrite(ledPin, ledState);
 }
 
 void buttonISR(){
-    ledState = !ledState;
+  ledState = !ledState;
 }
 ```
 
@@ -148,9 +137,9 @@ void buttonISR(){
 
 ```cpp
 attachInterrupt(
-    digitalPinToInterrupt(buttonPin),
-    buttonISR,
-    FALLING
+  digitalPinToInterrupt(buttonPin),
+  buttonISR,
+  FALLING
 );
 ```
 
@@ -170,15 +159,11 @@ attachInterrupt(
 
 # ISR คืออะไร?
 
-ISR ย่อมาจาก:
-
-Interrupt Service Routine
-
-คือฟังก์ชันที่ MCU จะกระโดดไปทำทันที เมื่อเกิด Interrupt
+ISR ย่อมาจาก: Interrupt Service Routine คือ ฟังก์ชันที่ MCU จะกระโดดไปทำทันที เมื่อเกิด Interrupt
 
 ```cpp
 void buttonISR(){
-    ledState = !ledState;
+  ledState = !ledState;
 }
 ```
 
