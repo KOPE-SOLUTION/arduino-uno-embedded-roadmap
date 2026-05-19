@@ -1,5 +1,7 @@
 # EP03 — Timer Basics
 
+![Thumbnail](images/thumbnail-ep3.png)
+
 เรียนรู้พื้นฐานของ Timer ใน Arduino Uno และ Embedded Systems
 
 ---
