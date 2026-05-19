@@ -114,13 +114,9 @@ delay(1000);
 แม้ `delay()` จะใช้ง่าย แต่มีข้อเสียสำคัญ:
 
 ❌ block CPU <br>
-
 ❌ ทำ multitasking ยาก <br>
-
 ❌ communication อาจสะดุด <br>
-
 ❌ ระบบไม่ responsive <br>
-
 ❌ ไม่เหมาะกับระบบ real-time
 
 ---
