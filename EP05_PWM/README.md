@@ -172,14 +172,147 @@ PWM คือพื้นฐานของ:
 
 ---
 
-# Real-World Applications
+# Analog Output vs PWM
 
+แม้ Arduino Uno จะไม่มี DAC จริง และ `analogWrite()` จะใช้ PWM แทน Analog จริง
+
+แต่ในโลก Embedded Systems จริง **ทั้ง PWM และ DAC ยังถูกใช้งานจริงทั้งคู่** โดยแต่ละแบบเหมาะกับงานต่างกัน
+
+## PWM เหมาะกับงานอะไร?
+
+PWM ถูกใช้เยอะมากในงาน:
 - LED Dimmer
 - Motor Speed Control
 - Fan Controller
 - Servo Control
 - Industrial Automation
-- Power Control
+- Power Electronics
+- Inverter
+- EV Motor Control
+
+<br>
+
+เหตุผลสำคัญคือ:
+- PWM มีประสิทธิภาพสูง
+- สูญเสียพลังงานต่ำ
+- เหมาะกับงานกำลังไฟฟ้า
+
+ดังนั้นในโลก Industrial และ Power Electronics **PWM ถูกใช้อย่างแพร่หลายมาก**
+
+## แล้ว Analog จริง (DAC) ใช้กับอะไร?
+
+DAC หรือ Analog Output จริง ยังถูกใช้อยู่ในงานจำนวนมาก โดยเฉพาะงานสัญญาณ (Signal Processing)
+
+### Audio Systems
+
+DAC คือหัวใจของระบบเสียง เช่น:
+- Sound Card
+- USB DAC
+- Bluetooth Speaker
+- โทรศัพท์
+- เครื่องเสียง
+
+เพราะลำโพงต้องการ Analog Signal จริง
+
+### Function Generator / Oscilloscope
+
+เครื่องสร้างสัญญาณ เช่น:
+- Sine Wave
+- Triangle Wave
+- Sawtooth Wave
+
+ต้องใช้ Analog Voltage จริง
+
+### Industrial 0-10V Control
+
+ในโรงงานยังมีการควบคุมแบบ `0-10V` เช่น:
+- Inverter
+- Valve Control
+- Damper
+- Pressure Controller
+
+### 4-20mA Industrial Signal
+
+ระบบอุตสาหกรรมจำนวนมากใช้ `4-20mA Current Loop` เช่น:
+- PLC
+- SCADA
+- Pressure Transmitter
+- Flow Meter
+
+โดยต้นทางมักมี DAC ภายในระบบ
+
+### Sensor Simulation
+
+บางระบบต้องจำลอง Sensor เช่น:
+- Temperature Sensor
+- Pressure Sensor
+- Analog Voltage
+- Current Signal
+
+จึงต้องใช้ Analog Output จริง
+
+### Reference Voltage
+
+ระบบ:
+- ADC
+- Calibration
+- Measurement
+
+ต้องใช้แรงดันนิ่งและละเอียดสูง DAC จึงมีความสำคัญมาก
+
+### Medical Equipment
+
+เช่น:
+- ECG
+- EEG
+- Signal Generator
+- Imaging System
+
+<br>
+
+ระบบเหล่านี้ต้องการ:
+- Signal เรียบ
+- Noise ต่ำ
+
+PWM จึงไม่เหมาะโดยตรง
+
+
+---
+
+## โลกจริงมักใช้ทั้ง PWM และ DAC ร่วมกัน
+
+### ตัวอย่าง: Inverter
+
+ภายในระบบอาจมี:
+- DAC → สร้าง Reference Signal
+- PWM → ใช้ขับกำลังจริง
+
+### ตัวอย่าง: Bluetooth Speaker
+
+เสียงเพลง: ใช้ DAC จริง
+
+แต่ภาคขยายแบบ Class-D: ใช้ PWM ขับลำโพง
+
+---
+
+# สรุปสำคัญ
+
+## PWM
+
+เหมาะกับ:
+- งานกำลัง
+- Motor
+- Power Electronics
+- Industrial Control
+
+## DAC
+
+เหมาะกับ:
+- งานสัญญาณ
+- Audio
+- Measurement
+- Calibration
+- Analog Interface
 
 ---
 
