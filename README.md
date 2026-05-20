@@ -50,7 +50,7 @@ Using:
 | EP  | Topic |
 | --- | ----- |
 | EP5 | [PWM Basic](EP05_PWM/README.md)   |
-| EP6 | [ADC](EP06_ADC/README.md)   |
+| EP6 | [ADC Basic](EP06_ADC/README.md)   |
 
 ### Communication Layer
 
