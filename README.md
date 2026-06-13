@@ -56,7 +56,7 @@ Using:
 
 | EP  | Topic |
 | --- | ----- |
-| EP7 | SPI   |
+| EP7 | [SPI Communication + SD Card Logger](EP07_SPI/README.md)   |
 | EP8 | I2C   |
 
 ---
