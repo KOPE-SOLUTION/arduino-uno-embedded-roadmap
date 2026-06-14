@@ -260,10 +260,10 @@ flowchart TD
     F -. Success .-> G[Delete Backup]
 ```
 
-เมื่ออินเทอร์เน็ตใช้งานได้: `Sensor Data --> MQTT Broker --> Cloud Database`
-แต่หากอินเทอร์เน็ตหรือ MQTT Broker ไม่พร้อมใช้งาน: `Sensor Data --> SD Card Backup`
-เมื่อระบบกลับมาออนไลน์: `SD Card --> Resend Data --> MQTT Broker --> Database`
-หลังจากส่งข้อมูลสำเร็จ: `Delete Local Backup`
+เมื่ออินเทอร์เน็ตใช้งานได้: `Sensor Data --> MQTT Broker --> Cloud Database` <br>
+แต่หากอินเทอร์เน็ตหรือ MQTT Broker ไม่พร้อมใช้งาน: `Sensor Data --> SD Card Backup` <br>
+เมื่อระบบกลับมาออนไลน์: `SD Card --> Resend Data --> MQTT Broker --> Database` <br>
+หลังจากส่งข้อมูลสำเร็จ: `Delete Local Backup` <br>
 
 <br>
 
