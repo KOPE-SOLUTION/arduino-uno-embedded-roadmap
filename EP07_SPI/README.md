@@ -14,8 +14,6 @@ SPI Concept → SPI Bus → SD Card Module → Write File → Read File
 
 # SPI คืออะไร?
 
-![SPI Doc](images/spi-doc.png)
-
 SPI (Serial Peripheral Interface) คือ Protocol สำหรับสื่อสารข้อมูลแบบ Serial ระหว่าง MCU กับ Peripheral อุปกรณ์ที่นิยมใช้ SPI:
 - SD Card Module
 - TFT LCD
