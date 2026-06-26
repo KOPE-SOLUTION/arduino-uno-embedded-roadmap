@@ -3,9 +3,9 @@
 | EP   | Topic               |
 | ---- | ------------------- |
 | EP9  | EEPROM              |
-| EP10 | OLED SSD1306        |
-| EP11 | RTC DS3231          |
-| EP12 | SD Card             |
+| EP10 | RTC DS3231          |
+| EP11 | BME280/BH1750       |
+| EP12 | -                   |
 | EP13 | NRF24               |
 | EP14 | RS485               |
 | EP15 | Modbus RTU          |
