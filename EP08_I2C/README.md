@@ -2,6 +2,8 @@
 
 เรียนรู้พื้นฐานของ I2C ผ่าน Arduino Uno และ OLED SH1106
 
+![Thumbnail](images/thumbnail-ep8-i2c.png)
+
 ## I2C คืออะไร?
 I2C คือ Protocol สำหรับการสื่อสารแบบ Serial ที่ใช้สายเพียง 2 เส้น (SDA, SCL) และรองรับการเชื่อมต่ออุปกรณ์หลายตัวบน Bus เดียวกัน
 
