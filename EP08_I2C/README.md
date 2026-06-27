@@ -54,9 +54,10 @@ void setup(){
     Wire.begin();
     display.begin(OLED_ADDR,true);
     display.clearDisplay();
-    display.setTextSize(2);
+    display.setTextColor(SH110X_WHITE);
+    display.setTextSize(1);
     display.setCursor(0,20);
-    display.println("Hello");
+    display.println("KOPE SOLUTION");
     display.display();
 }
 
